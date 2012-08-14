@@ -138,7 +138,6 @@ def download(options, args):
 def calculate_score(data):
     """Calculates follower ranking based on input data.
     """
-    max_followers = len(data["followers"].values())
     # compute follower/following ratio
     score = 0
     for key in data["followers"]:
